@@ -9,7 +9,7 @@ Average CWmin per TXOP/Sucessful transmission
 Average defer per TXOP/Suessful Transmission.
 
 # Usage
-To run the simulator it is sufficient to run the main.py file. 
+To run the simulator it is sufficient to run the - `main.py` main.py file. 
 
 
 
