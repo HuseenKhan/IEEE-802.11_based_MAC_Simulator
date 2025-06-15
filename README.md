@@ -41,7 +41,9 @@ The total area size
 
 The number of rooms
 
-The positions of APs (Access Points) and STAs (Stations) in each room
+The positions of APs (Access Points) and STAs (Stations) in each room. 
+
+T0 calculate the path loss betweem the AP and STA, we used Log-distance path loss model and define in `calculate_path_loss.py` file.
 
 
 
