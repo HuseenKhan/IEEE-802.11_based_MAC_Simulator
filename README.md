@@ -9,8 +9,17 @@ Average CWmin per TXOP/Sucessful transmission
 Average defer per TXOP/Suessful Transmission.
 
 # Usage
-To run the simulator, it is sufficient to run the `main.py` file. The `Simulation_setup.py` create the simulation scenario including number of nodes, frame length and time_slots (Simulation time). 
-The sensing matrix in `Simulation_setup.py file is to decrale which node can sense who. 
+To run the simulator, simply execute the `main.py` file. 
+To run the simulator, it is sufficient to run the `main.py` file. The Simulation_setup.py file sets up the simulation environment. It defines:
+
+The number of nodes
+
+Frame length
+
+time_slots (simulation duration)
+
+It also includes a sensing matrix that specifies which nodes can sense each other. This matrix helps define the sensing relationships in the simulation scenario.
+
 
 ```python
 sensing_matrix = [
@@ -23,33 +32,8 @@ sensing_matrix = [
 for i in range(len(nodes)):
     sensing_nodes_for_i = [nodes[j] for j in range(len(nodes)) if sensing_matrix[i][j] == 1]
     nodes[i].set_sensing_nodes(sensing_nodes_for_i)
-# Usage
 
-To run the simulator, simply execute the `main.py` file:
 
-```bash
-python main.py
-
-The Simulation_setup.py file sets up the simulation environment. It defines:
-
-The number of nodes
-
-Frame length
-
-time_slots (simulation duration)
-
-It also includes a sensing matrix that specifies which nodes can sense each other. This matrix helps define the sensing relationships in the simulation scenario.
-
-sensing_matrix = [
-    [0, 1, 1],  # AP1 senses AP2 and AP3
-    [1, 0, 1],  # AP2 senses AP1 and AP3
-    [1, 1, 0],  # AP3 senses AP1 and AP2
-]
-
-# Assign sensing nodes to each node
-for i in range(len(nodes)):
-    sensing_nodes_for_i = [nodes[j] for j in range(len(nodes)) if sensing_matrix[i][j] == 1]
-    nodes[i].set_sensing_nodes(sensing_nodes_for_i)
 
 
 
