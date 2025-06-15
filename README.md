@@ -9,8 +9,7 @@ Average CWmin per TXOP/Sucessful transmission
 Average defer per TXOP/Suessful Transmission.
 
 # Usage
-To run the simulator, simply execute the `main.py` file. 
-To run the simulator, it is sufficient to run the `main.py` file. The Simulation_setup.py file sets up the simulation environment. It defines:
+To run the simulator, it is sufficient to run the `main.py` file. The simulation environment is created in  `Simulation_setup.py` file. It defines:
 
 The number of nodes
 
