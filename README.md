@@ -32,9 +32,9 @@ for i in range(len(nodes)):
     sensing_nodes_for_i = [nodes[j] for j in range(len(nodes)) if sensing_matrix[i][j] == 1]
     nodes[i].set_sensing_nodes(sensing_nodes_for_i)
 
+```
 
-
-
+To generate a grid layout structure, run the AP_STA_
 
 
 
