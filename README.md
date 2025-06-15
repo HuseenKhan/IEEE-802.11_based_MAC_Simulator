@@ -34,7 +34,13 @@ for i in range(len(nodes)):
 
 ```
 
-To generate a grid layout structure, run the AP_STA_
+To generate a grid layout for the simulation, run the 'AP_STA_layout.py' file:
+This function defines and computes:
+
+The total area size
+The number of rooms
+The positions of APs (Access Points) and STAs (Stations) in each room
+
 
 
 
