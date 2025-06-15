@@ -9,7 +9,20 @@ Average CWmin per TXOP/Sucessful transmission
 Average defer per TXOP/Suessful Transmission.
 
 # Usage
-To run the simulator, it is sufficient to run the `main.py` file. 
+To run the simulator, it is sufficient to run the `main.py` file. The `Simulation_setup.py` create the simulation scenario including number of nodes, frame length and time_slots (Simulation time). 
+The sensing matrix is to decrale which node can sense who. 
+
+```python
+sensing_matrix = [
+    [0, 1, 1],  # AP1 sense AP2 and AP3
+    [1, 0, 1],  # AP2 sense AP1 and AP3
+    [1, 1, 0],  # AP3 sense AP1 and AP2
+]
+
+# Assign sensing nodes to each node
+for i in range(len(nodes)):
+    sensing_nodes_for_i = [nodes[j] for j in range(len(nodes)) if sensing_matrix[i][j] == 1]
+    nodes[i].set_sensing_nodes(sensing_nodes_for_i)
 
 
 
