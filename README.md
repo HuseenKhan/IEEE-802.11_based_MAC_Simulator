@@ -34,7 +34,7 @@ for i in range(len(nodes)):
 
 ```
 
-To generate a grid layout for the simulation, run the `AP_STA_layout.py` file:
+To generate a grid layout for the simulation, run the `AP_STA_layout.py` file.
 This function defines and computes:
 
 The total area size
