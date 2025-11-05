@@ -6,8 +6,7 @@ shared_channel_status = "Idle"
 
 
 """
-Channel energy value is just dummy values. the channel is either IDLE 
-or BUSY. When channel is BUSY , the channel energy is higher than node CST if node is
+When channel is BUSY , the channel energy is higher than node CST if node is
 in the carrier sensing range of transmiiting node (which depends on the sensing matrix). 
 
 Note that in  the model when we define the AP and STA location (AP_STA) the 
